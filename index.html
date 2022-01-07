@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alex Fernando | Front-end Developer</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/bcd110732a.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <section class="home" id="home">
+        <nav class="navbar">
+            <a href="index.html" class="logo">
+                Alex Fernando <span>Front-end Developer</span>
+            </a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul class="menu">
+                    <li>
+                        <a href="#home">
+                            Home
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#services">
+                            Services
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#contact">
+                            Contact
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <div class="text-box">
+            <h1>
+                Alex Fernando <span>Front-end Developer</span>
+            </h1>
+            <p>
+                I work as a Front-end Developer producing modern and responsive websites with unique and striking visual identities.
+            </p>
+            <a href="#" class="follow">Follow Me On Social Media</a>
+        </div>
+    </section>
+    <section class="services" id="services">
+        <h2>
+            My Services
+        </h2>
+        <div class="row">
+            <div class="code-col">
+                <h3>
+                    HTML 5
+                </h3>
+                <p>
+                    HTML5, sigla para Hypertext Markup Language, é uma linguagem de marcação de hipertexto para apresentar e estruturar o conteúdo na web.
+                </p>
+            </div>
+            <div class="code-col">
+                <h3>
+                    CSS 3
+                </h3>
+                <p>
+                    CSS3 é a terceira mais nova versão das famosas Cascading Style Sheets (ou simplesmente CSS), onde se define estilos para seu projeto web.Com efeitos de transição, imagem,imagem de fundo/Background e outros, que dão um estilo novo e elegante a seus projetos web.
+                </p>
+            </div>
+            <div class="code-col">
+                <h3>
+                    JavaScript
+                </h3>
+                <p>
+                    O JS ou JavaScript é uma linguagem de programação de alto-nível, criada no meio da década de 90, mais precisamente em 1996 pelo lendário programador Brendan Eich que, além de criar o JavaScript, foi também um dos fundadores da Mozilla Corporation.
+                </p>
+            </div>
+        </div>
+    </section>
+    <section class="contact" id="contact">
+        <div class="container">
+            <h1>
+                GET IN TOUCH
+            </h1>
+            <form>
+                <div class="row">
+                    <div class="column">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" placeholder="Your name here">
+                    </div>
+                    <div class="column">
+                        <label for="email">E-mail</label>
+                        <input type="email" id="email" placeholder="Your email here">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="column">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subjecr" placeholder="Your subject here">
+                    </div>
+                    <div class="column">
+                        <label for="contact">Contact Number</label>
+                        <input type="tel" id="contact" placeholder="Your phone number here">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="column">
+                        <label for="issue">Describe your issue</label>
+                        <textarea id="issue" placeholder="Describe your issue in detail here" rows="3"></textarea>
+                    </div>
+                </div>
+                <button>Submite</button>
+            </form>
+        </div>
+    </section>
+    <footer class="footer">
+            <ul class="menu">
+                <li>
+                    <a href="https://www.facebook.com/">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://br.linkedin.com/">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://github.com/">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </li>
+            </ul>
+    </footer>
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu() {
+            navLinks.style.right="0";
+        }
+        function hideMenu() {
+            navLinks.style.right="-300px";
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,544 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+body {
+    overflow-x: hidden;
+}
+.home {
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(../img/banner-home.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+}
+.home .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+}
+.home .navbar .logo {
+    text-decoration: none;
+    color: rgb(230, 245, 115);
+    font-size: 25px;
+    font-weight: 600;
+    padding-top: 10px;
+    padding-left: 10%;
+}
+.home .navbar .logo span {
+    display: block;
+    font-size: 15px;
+    font-weight: 400;
+    letter-spacing: 1.3px;
+}
+.home .navbar .nav-links {
+    text-align: right;
+    background: rgb(230, 245, 115);
+    padding: 10px 30px;
+    border-bottom-left-radius: 18px;
+}
+.home .navbar .nav-links .menu li {
+    list-style: none;
+    display: inline-block;
+    padding: 10px 25px;
+    position: relative;
+}
+.home .navbar .nav-links .menu li a {
+    color: rgb(0, 10, 80);
+    font-weight: 500;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 13px;
+}
+.home .navbar .nav-links .menu li::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: rgb(0, 10, 80);
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.home .navbar .nav-links .menu li:hover::after {
+    width: 100%;
+}
+.home .text-box {
+    width: 90%;
+    color:rgb(230, 245, 115);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.home .text-box h1 {
+    color: rgb(230, 245, 115);
+    font-size: 55px;
+    font-weight: 600;
+}
+.home .text-box h1 span {
+    display: block;
+    font-size: 36px;
+    font-weight: 400;
+    letter-spacing: 1.3px;
+}
+.home .text-box p {
+    margin: 10px 0 40px;
+    font-size: 14px;
+    color: rgb(230, 245, 115);
+}
+.home .text-box .follow {
+    display: inline-block;
+    text-decoration: none;
+    color: rgb(230, 245, 115);
+    border: 1px solid rgb(230, 245, 115);
+    padding: 12px 34px;
+    font-size: 15px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+    border-radius: 10px;
+}
+.home .text-box .follow:hover {
+    border: 1px solid rgb(0, 10, 80);
+    background: rgb(0, 10, 80);
+    transition: 1s;
+}
+.home .navbar .fa, .home .navbar .nav-links .fa {
+    display: none;
+}
+
+
+
+/* ----- SERVICES ----- */
+
+
+.services {
+    width: 100%;
+    height: 100vh;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+    background-image: linear-gradient(rgba(230, 245, 115, 0.5), rgba(230, 245, 115, 0.5)), url(../img/banner-services.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+.services h2 {
+    font-size: 30px;
+    font-weight: 600;
+    color:rgb(0, 10, 80);
+}
+.services p {
+    color: rgb(0, 10, 80);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    padding: 10px;
+}
+.services .row {
+    margin: 5% 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.services .row .code-col {
+    flex-basis: 31%;
+    background: rgba(0, 10, 80, 0.5);
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+}
+.services .row .code-col h3 {
+    text-align: center;
+    font-weight: 500;
+    margin: 10px 0;
+    color: rgb(230, 245, 115);
+}
+.services .row .code-col p {
+    color: rgb(230, 245, 115);
+}
+.services .row .code-col:hover {
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* ----- CONTACT ----- */
+
+.contact {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(180deg, rgba(0, 10, 80, 0.5), rgba(230, 245, 115, 0.5));
+    overflow: hidden;
+}
+.contact .container {
+    background-color: #fff;
+    padding: 35px 50px;
+    width: 70%;
+    min-width: 420px;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    border-radius: 10px;
+    box-shadow: 20px 30px 25px rgba(0, 0, 0, 0.15);
+}
+.contact .container h1 {
+    font-size: 30px;
+    text-align: center;
+    color: #1c093c;
+}
+.contact .container form {
+    position: relative;
+    width: 100%;
+    margin: 30px auto 0 auto;
+}
+.contact .container form .row {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 20px 30px;
+    margin-bottom: 20px;
+}
+.contact .container form .row label {
+    color: #1c093c;
+    font-size: 14px;
+}
+.contact .container form .row textarea, .contact .container form .row input {
+    width: 100%;
+    font-weight: 400;
+    padding: 8px 10px;
+    border-radius: 5px;
+    border: 1.2px solid #c4cae0;
+    margin-top: 5px;
+}
+.contact .container form .row textarea {
+    resize: none;
+}
+.contact .container form .row textarea:focus, .contact .container form .row input:focus {
+    outline: none;
+    border-color: #6f6df4;
+}
+.contact .container form button {
+    border: none;
+    padding: 10px 20px;
+    background: linear-gradient(130deg, #6f6df4, #4c46f5);
+    color: #fff;
+    border-radius: 3px;
+}
+
+
+/* ----- FOOTER ----- */
+
+.footer {
+    background:rgb(0, 10, 40);
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.footer .menu {
+    display: flex;
+}
+.footer .menu li {
+    list-style: none;
+}
+.footer .menu li a {
+    display: block;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    text-decoration: none;
+    color: rgb(230, 245, 115);
+    box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.05);
+    margin: 0 30px;
+    border-radius: 50%;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.5s;
+}
+.footer .menu li a:hover  {
+    transform: translateY(-10px);
+}
+.footer .menu li a .fab {
+    font-size: 25px;
+    line-height: 50px;
+    position: relative;
+    z-index: 10;
+    transition: 0.5s;
+}
+.footer .menu li a:hover .fab {
+    color: #fff;
+}
+.footer .menu li a::after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    top: -90px;
+    left: 0;
+    background: linear-gradient(-45deg, rgba(230, 245, 115, 0.5), rgba(0, 10, 80, 0.5));
+    position: absolute;
+    transition: 0.5s;
+}
+.footer .menu li a:hover::after {
+    top: 0;
+}
+
+
+/* ----- RESPONSIVE ----- */
+
+
+
+@media (max-width: 1000px) {
+    .home .text-box h1 {
+        font-size: 40px;
+    }
+    .home .text-box h1 span {
+        font-size: 24px;
+    }
+    .home .text-box p {
+        font-size: 12px;
+        text-align: center;
+    }
+    .contact .container {
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        height: 80%;
+    }
+    .contact .container h1 {
+        font-size: 20px;
+    }
+    .contact .container form {
+        width: 80%;
+        margin: 18px auto 0 auto;
+    }
+    .contact .container form .row label {
+        font-size: 12px;
+    }
+    .contact .container form .row textarea, .contact .container form .row input {
+        padding: 6px 8px;
+        margin-top: 3px;
+    }
+    .contact .container form button {
+        padding: 8px 16px;
+    }
+}
+
+@media (max-width: 850px) {
+    .home .text-box h1 {
+        font-size: 30px;
+    }
+    .home .text-box h1 span {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 800px) {
+    .home .navbar .logo span {
+        display: none;
+    }
+    .home .text-box h1 {
+        font-size: 40px;
+    }
+    .home .text-box h1 span {
+        font-size: 24px;
+    }
+    .home .text-box p {
+        font-size: 12px;
+    }
+    .home .navbar .nav-links {
+        position: absolute;
+        background:rgb(230, 245, 115);
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: 0;
+        text-align: left;
+        z-index: 2;
+        transition: 1s;
+    }
+    .home .navbar .nav-links .menu li {
+        display: block;
+    }
+    .home .navbar .nav-links .menu {
+        padding: 30px;
+    }
+    .home .text-box .follow {
+        padding: 8px 26px;
+        font-size: 13px;
+    }
+    .home .navbar .fa, .home .navbar .nav-links .fa {
+        display: block;
+        color: rgb(255, 255, 255);
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+    .home .navbar .nav-links .fa {
+        color:rgb(0, 10, 80);
+    }
+    .home .navbar .fa {
+        color: rgb(230, 245, 115);
+    }
+    .home .navbar .nav-links .menu li:hover::after {
+        width: 0%;
+    }
+    .services {
+        background: linear-gradient(180deg, rgba(230, 245, 115, 0.5), rgba(0, 10, 80, 0.5));
+    }
+    .services .row {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 500px) {
+    .home .navbar .logo span {
+        display: none;
+    }
+    .home .text-box h1 {
+        font-size: 30px;
+    }
+    .home .text-box h1 span {
+        font-size: 18px;
+    }
+    .home .text-box p {
+        font-size: 10px;
+    }
+    .services {
+        background: linear-gradient(180deg, rgba(230, 245, 115, 0.5), rgba(0, 10, 80, 0.5));
+    }
+    .services .row {
+        flex-direction: column;
+    }
+    .services h2 {
+        font-size: 20px;
+        font-weight: 500;
+    }
+    .services p {
+        font-size: 10px;
+        line-height: 10px;
+        padding: 8px;
+    }
+    .services .row {
+        margin: 5% 10px;
+        display: flex;
+        justify-content: space-between;
+    }
+    .services .row .code-col {
+        flex-basis: 28%;
+        padding: 15px 10px;
+    }    
+}
+
+/* LAYOUT HOME BACKGROUND COLOR
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+.home {
+    min-height: 100vh;
+    width: 100%;
+    background: rgb(0, 10, 40);
+    color: rgb(255, 255, 255);
+    position: relative;
+}
+.home .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+}
+.home .navbar .logo {
+    text-decoration: none;
+    color: rgb(0, 10, 80);
+    font-size: 30px;
+    font-weight: bold;
+    padding-top: 10px;
+    padding-left: 10%;
+}
+.home .navbar .nav-links {
+    text-align: right;
+    background: rgb(230, 245, 115);
+    padding: 10px 30px;
+    border-bottom-left-radius: 18px;
+}
+.home .navbar .nav-links .menu li {
+    list-style: none;
+    display: inline-block;
+    padding: 10px 25px;
+    position: relative;
+}
+.home .navbar .nav-links .menu li a {
+    color: rgb(0, 10, 40);
+    text-decoration: none;
+    font-size: 13px;
+}
+.home .navbar .nav-links .menu li::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: rgb(0, 10, 40);
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.home .navbar .nav-links .menu li:hover::after {
+    width: 100%;
+}
+.home .left-sidebar {
+    width: 20%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background:rgb(230, 245, 115);
+}
+.home .row {
+    padding: 0 10%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    position: relative;
+    margin-top: 9.5%;
+}
+.home .row .left-col {
+    flex-basis: 40%;
+}
+.home .row .left-col .banner {
+    width: 100%;
+    cursor: pointer;
+    filter: grayscale(0);
+    transition: filter 1s;
+    border-radius: 10px;
+}
+.home .row .left-col .banner:hover {
+    filter: grayscale(1);
+}
+.home .row .right-col {
+    flex-basis: 55%;
+}
+.home .row .right-col h1 {
+    font-size: 55px;
+    font-weight: 600;
+}
+.home .row .right-col h1 span {
+    display: block;
+    font-weight: 400;
+    font-size: 38.5px;
+}
+.home .row .right-col p {
+    color: rgb(255, 255, 255);
+    margin: 20px 0 70px;
+    font-size: 13px;
+    font-weight: 400;
+}
+*/
